@@ -1,0 +1,71 @@
+<!DOCTYPE html-dom-pdf>
+<html-dom-pdf>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div.m-aaa {
+            width: 800px;
+            margin: 0 auto;
+        }
+        header, article, footer, div.attach {
+            width: 100%;
+            font-size: 20px;
+            line-height: 40px;
+            color: #fff;
+            text-align: center;
+        }
+        header {
+            height: 200px;
+            background: red;
+        }
+        article {
+            height: 840px;
+            background: green;
+            margin: 10px auto;
+        }
+        footer {
+            height: 100px;
+            background: yellow;
+            color: #000;
+            margin: 10px auto;
+        }
+        div.attach {
+            height: 200px;
+            background: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="m-aaa" id="j-aaa">
+        <header>
+            header
+        </header>
+        <article>
+            article
+        </article>
+        <footer>
+            footer
+        </footer>
+        <div class="attach">
+            attach
+        </div>
+    </div>
+    <script src="./../dist/html-dom-pdf.min.js"></script>
+    <script>
+        new HtmlDomPdf({
+            selector: '#j-aaa',
+            title: 'pdf-my',
+            marginLR: 30,
+            marginTB: 30,
+            offsetLimit: 300,
+        });
+    </script>
+</body>
+
+</html-dom-pdf>
