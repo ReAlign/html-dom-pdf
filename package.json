@@ -1,6 +1,6 @@
 {
     "name": "html-dom-pdf",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "main": "dist/html-dom-pdf.cjs.min.js",
     "module": "dist/html-dom-pdf.esm.min.js",
     "unpkg": "dist/html-dom-pdf.min.js",
